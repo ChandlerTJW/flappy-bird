@@ -84,7 +84,9 @@ class Scene extends GuaScene{
         }
         if(pipe.upCollide(bird) || pipe.downCollide(bird)){
             var s = SceneEnd.new(game)
-            game.runWithScene(s)
+            setTimeout(function(){
+                game.runWithScene(s)
+            },1000)
         }
 
     }
