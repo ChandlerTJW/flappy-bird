@@ -83,6 +83,7 @@ class Scene extends GuaScene{
             g.x += offset
         }
         if(pipe.upCollide(bird) || pipe.downCollide(bird)){
+            this.b.vy = -this.b.vy
             var s = SceneEnd.new(game)
             setTimeout(function(){
                 game.runWithScene(s)
