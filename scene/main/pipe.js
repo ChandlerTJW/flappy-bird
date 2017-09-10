@@ -40,7 +40,7 @@ class Pipes{
     downCollide(bird){
         for(var p2 of this.downPipes){
             if(bird.x+bird.w>=p2.x && bird.x <= p2.x + p2.w){
-                if(bird.y-bird.h >= p2.y ){
+                if(bird.y + bird.h >= p2.y ){
                     return true
                 }
             }
