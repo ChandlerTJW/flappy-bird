@@ -21,4 +21,3 @@ class SceneEnd extends GuaScene{
         this.game.context.fillStyle = "#000"
         this.game.context.fillText('按f5重新开始游戏', 130, 290)
     }
-f5
